@@ -1,0 +1,12 @@
+{
+  "items": [
+    {
+      "category": "Base",
+      "brand": "NARS",
+      "name": "Sheer Glow",
+      "image": "assets/uploads/nars.jpg",
+      "notes": "Lightweight luminous base",
+      "link": "#"
+    }
+  ]
+}

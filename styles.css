@@ -1,0 +1,48 @@
+/* ===========================
+   Theme
+=========================== */
+:root{
+  --brand:#f64f9b;
+  --accent:#a855f7;
+  --ink:#111827;
+  --muted:#6b7280;
+  --card:#ffffff;
+  --ring:#f1f5f9;
+  --shadow:0 10px 25px rgba(17,17,17,.08);
+  --shadow-lg:0 18px 45px rgba(17,17,17,.12);
+}
+html,body{scroll-behavior:smooth;}
+body{color:var(--ink); background:#fff; font-synthesis-weight:none;}
+a{color:inherit; text-decoration:none; transition:color .2s ease, opacity .2s ease;}
+a:hover{opacity:.9;}
+img{max-width:100%; height:auto; display:block}
+.serif{font-family:"Playfair Display", ui-serif, Georgia, "Times New Roman", serif;}
+.underline-fancy{width:88px;height:4px;border-radius:9999px;margin:.6rem auto 0;background:linear-gradient(90deg,var(--brand),var(--accent));}
+.nav-blur{backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px);}
+.card{background:var(--card);border:1px solid var(--ring);border-radius:1.25rem;box-shadow:var(--shadow);padding:1.1rem 1.2rem;}
+.card-hover{transition:transform .20s ease, box-shadow .20s ease;}
+.card-hover:hover{transform:translateY(-3px); box-shadow:var(--shadow-lg);}
+.badge{display:inline-block; padding:.25rem .6rem; font-size:.75rem; background:#f5f3ff; color:#6d28d9; border-radius:9999px;}
+.chip{display:inline-block; padding:.5rem .9rem; border-radius:9999px; border:1px solid var(--ring); background:#fff; font-weight:500; margin:.25rem .35rem .25rem 0; cursor:pointer; transition:all .2s ease;}
+.chip:hover{transform:translateY(-1px);} .chip.active{background:linear-gradient(90deg,var(--brand),var(--accent)); color:#fff; border-color:transparent}
+.press-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(140px,1fr)); gap:1rem;}
+#galleryGrid{display:grid; grid-template-columns:repeat(2,1fr); gap:10px;}
+@media (min-width:640px){#galleryGrid{grid-template-columns:repeat(3,1fr)}}
+#galleryGrid img{width:100%; aspect-ratio:4/5; object-fit:cover; border-radius:1rem; box-shadow:var(--shadow); background:#fff;}
+.student-card img{width:100%; aspect-ratio:4/5; object-fit:cover; border-radius:1rem; background:#fff;}
+.product-thumb{width:100%; aspect-ratio:1/1; object-fit:cover; border-radius:1rem; background:#fff;}
+.tutorial-thumb{width:100%; aspect-ratio:16/9; object-fit:cover; border-radius:1rem; background:#fff;}
+.tab{cursor:pointer} .tab.active{color:#6d28d9; font-weight:700}
+.faq-q{padding:.6rem 0} .faq-a{line-height:1.65}
+.testi-card .stars svg{width:18px;height:18px;display:inline-block;margin-right:2px}
+footer a{opacity:.9} footer a:hover{opacity:1}
+.btn-gradient{display:inline-block; color:#fff; font-weight:600; padding:.8rem 1.25rem; border-radius:1rem; background:linear-gradient(90deg,var(--brand),var(--accent));}
+.hidden{display:none !important;}
+#mobileMenu{position:fixed;top:0;left:0;right:0;bottom:0;z-index:2147483647;}
+#mobileBackdrop{position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,.30);z-index:2147483646;}
+#mobileNav a{display:block;padding:12px 0;border-bottom:1px solid #eee;color:#111;text-decoration:none;}
+#mobileNav a:last-child{border-bottom:0}
+/* Quick links grid */
+.quick-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:.75rem;}
+@media(min-width:640px){.quick-grid{grid-template-columns:repeat(4,1fr);}}
+.quick-tile{display:flex;align-items:center;justify-content:center;padding:1rem;border:1px solid var(--ring);border-radius:1rem;box-shadow:var(--shadow);font-weight:600;}

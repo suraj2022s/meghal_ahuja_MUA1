@@ -1,0 +1,28 @@
+{
+  "items": [
+    {
+      "category": "Eyes",
+      "title": "Smokey Eye for Weddings",
+      "youtube": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+      "difficulty": "Easy",
+      "duration": "6 min",
+      "steps": [
+        "Prime lids",
+        "Blend transition",
+        "Pack shimmer"
+      ]
+    },
+    {
+      "category": "Face",
+      "title": "Dewy Skin Base (uploaded)",
+      "video": "assets/uploads/dewy.mp4",
+      "difficulty": "Medium",
+      "duration": "8 min",
+      "steps": [
+        "Hydrate",
+        "Sheer foundation",
+        "Cream blush"
+      ]
+    }
+  ]
+}

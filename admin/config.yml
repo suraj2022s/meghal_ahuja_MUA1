@@ -1,0 +1,235 @@
+﻿local_backend: true
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+
+site_url: "/"
+logo_url: "/assets/logo.png"
+
+collections:
+  - name: "settings"
+    label: "Business Settings"
+    format: "json"
+    delete: false
+    editor:
+      preview: false
+    files:
+      - name: "settings"
+        label: "Business Settings"
+        file: "content/settings.json"
+        fields:
+          - label: "Business"
+            name: "business"
+            widget: "object"
+            fields:
+              - {label: "Name", name: "name", widget: "string"}
+              - {label: "Tagline", name: "tagline", widget: "string", required: false}
+              - {label: "Phone (WhatsApp)", name: "phone", widget: "string"}
+              - {label: "Email", name: "email", widget: "string"}
+              - {label: "Instagram URL", name: "instagram", widget: "string"}
+              - {label: "City", name: "city", widget: "string", required: false}
+              - {label: "Areas", name: "areas", widget: "string", required: false}
+              - {label: "Hours", name: "hours", widget: "string", required: false}
+          - {label: "Hero Image", name: "hero_image", widget: "image", required: false}
+
+  - name: "services"
+    label: "Services"
+    format: "json"
+    files:
+      - name: "services"
+        label: "Services List"
+        file: "content/services.json"
+        fields:
+          - label: "Items"
+            name: "items"
+            widget: "list"
+            fields:
+              - {label: "Name", name: "name", widget: "string"}
+              - {label: "Description", name: "desc", widget: "text", required: false}
+              - {label: "Price", name: "price", widget: "string", required: false}
+
+  - name: "gallery"
+    label: "Gallery"
+    format: "json"
+    files:
+      - name: "gallery"
+        label: "Gallery Images"
+        file: "content/gallery.json"
+        fields:
+          - label: "Images"
+            name: "images"
+            widget: "list"
+            fields:
+              - {label: "Image", name: "image", widget: "image"}
+
+  - name: "students"
+    label: "Student Work"
+    format: "json"
+    files:
+      - name: "students"
+        label: "Students Grid"
+        file: "content/students.json"
+        fields:
+          - label: "Items"
+            name: "items"
+            widget: "list"
+            fields:
+              - {label: "Name", name: "name", widget: "string"}
+              - {label: "Cohort", name: "cohort", widget: "string", required: false}
+              - {label: "Image", name: "image", widget: "image"}
+              - {label: "Instagram", name: "instagram", widget: "string", required: false}
+              - {label: "Quote", name: "quote", widget: "text", required: false}
+
+  - name: "tutorials"
+    label: "Tutorials"
+    format: "json"
+    files:
+      - name: "tutorials"
+        label: "Tutorials"
+        file: "content/tutorials.json"
+        fields:
+          - label: "Items"
+            name: "items"
+            widget: "list"
+            fields:
+              - {label: "Category", name: "category", widget: "select", options: ["Eyes","Face","Lips"]}
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "YouTube URL (optional)", name: "youtube", widget: "string", required: false}
+              - {label: "Upload Video (mp4, optional)", name: "video", widget: "file", required: false}
+              - {label: "Thumbnail (optional)", name: "thumb", widget: "image", required: false}
+              - {label: "Difficulty", name: "difficulty", widget: "string", required: false}
+              - {label: "Duration", name: "duration", widget: "string", required: false}
+              - {label: "Steps", name: "steps", widget: "list", field: {label: "Step", name: "step", widget: "string"}, required: false}
+
+  - name: "tips"
+    label: "Tips"
+    format: "json"
+    files:
+      - name: "tips"
+        label: "Makeup Tips"
+        file: "content/tips.json"
+        fields:
+          - label: "Items"
+            name: "items"
+            widget: "list"
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Body", name: "body", widget: "text"}
+
+  - name: "products"
+    label: "Products I Use"
+    format: "json"
+    files:
+      - name: "products"
+        label: "Products"
+        file: "content/products.json"
+        fields:
+          - label: "Items"
+            name: "items"
+            widget: "list"
+            fields:
+              - {label: "Category", name: "category", widget: "string"}
+              - {label: "Brand", name: "brand", widget: "string"}
+              - {label: "Name", name: "name", widget: "string"}
+              - {label: "Image", name: "image", widget: "image", required: false}
+              - {label: "Notes", name: "notes", widget: "text", required: false}
+              - {label: "Buy Link", name: "link", widget: "string", required: false}
+
+  - name: "testimonials"
+    label: "Client Love"
+    format: "json"
+    files:
+      - name: "testimonials"
+        label: "Testimonials"
+        file: "content/testimonials.json"
+        fields:
+          - {label: "Title", name: "title", widget: "string", required: false}
+          - {label: "Subtitle", name: "subtitle", widget: "string", required: false}
+          - label: "Items"
+            name: "items"
+            widget: "list"
+            fields:
+              - {label: "Name", name: "name", widget: "string"}
+              - {label: "Role", name: "role", widget: "string", required: false}
+              - {label: "Avatar", name: "avatar", widget: "image", required: false}
+              - {label: "Quote", name: "quote", widget: "text"}
+              - {label: "Rating (0-5)", name: "rating", widget: "number", value_type: "int", min: 0, max: 5}
+
+  - name: "faq"
+    label: "FAQ"
+    format: "json"
+    files:
+      - name: "faq"
+        label: "FAQ"
+        file: "content/faq.json"
+        fields:
+          - label: "Items"
+            name: "items"
+            widget: "list"
+            fields:
+              - {label: "Question", name: "q", widget: "string"}
+              - {label: "Answer", name: "a", widget: "text"}
+
+  - name: "press"
+    label: "Press Logos"
+    format: "json"
+    files:
+      - name: "press"
+        label: "Press Logos"
+        file: "content/press.json"
+        fields:
+          - label: "Items"
+            name: "items"
+            widget: "list"
+            fields:
+              - {label: "Logo", name: "image", widget: "image"}
+              - {label: "Alt", name: "alt", widget: "string", required: false}
+              - {label: "Link", name: "link", widget: "string", required: false}
+
+
+  - name: "navigation"
+    label: "Navigation"
+    format: "json"
+    delete: false
+    editor:
+      preview: false
+    files:
+      - name: "navigation"
+        label: "Menu & Quick Links"
+        file: "content/navigation.json"
+        fields:
+          - label: "Items"
+            name: "items"
+            widget: "list"
+            fields:
+              - {label: "Label", name: "label", widget: "string"}
+              - {label: "Link (href)", name: "href", widget: "string", hint: "For custom pages, use page.html?p=your-slug"}
+              - {label: "Show in Header", name: "in_header", widget: "boolean", default: true}
+              - {label: "Show in Quick Links", name: "in_quick", widget: "boolean", default: true}
+              - {label: "Order", name: "order", widget: "number", value_type: "int", default: 1}
+
+
+  - name: "pages"
+    label: "Pages"
+    label_singular: "Page"
+    format: "json"
+    folder: "content/pages"
+    create: true
+    slug: "{{slug}}"
+    editor:
+      preview: false
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Subtitle", name: "subtitle", widget: "string", required: false}
+      - {label: "Hero Image", name: "hero_image", widget: "image", required: false}
+      - {label: "Body (Markdown)", name: "body", widget: "markdown", required: false}
+      - label: "Gallery"
+        name: "gallery"
+        widget: "list"
+        required: false
+        fields:
+          - {label: "Image", name: "image", widget: "image"}
+

@@ -1,0 +1,13 @@
+{
+  "title": "Client Love",
+  "subtitle": "Kind words from clients",
+  "items": [
+    {
+      "name": "Simran",
+      "role": "Bride",
+      "avatar": "assets/uploads/client1.jpg",
+      "quote": "Felt like the best version of me!",
+      "rating": 5
+    }
+  ]
+}
