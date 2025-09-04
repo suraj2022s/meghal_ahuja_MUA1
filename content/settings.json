@@ -1,13 +1,13 @@
 {
   "business": {
-    "name": "Meghal Ahuja \u2022 MUA",
+    "name": "Meghal Ahuja • MUA",
     "tagline": "Editorial polish, bridal softness",
     "phone": "+91 9876543210",
     "email": "bookings@example.com",
-    "instagram": "https://instagram.com/meghalahuja.mua",
+    "instagram": "https://instagram.com",
     "city": "Mumbai",
-    "areas": "Navi Mumbai \u2014 Thane \u2014 Pune \u2014 Destination weddings",
-    "hours": "Mon\u2013Sun 9:00\u201320:00"
+    "areas": "Navi Mumbai — Thane — Pune — Destination weddings",
+    "hours": "Mon–Sun 9:00–20:00"
   },
   "hero_image": "assets/logo.png"
 }
