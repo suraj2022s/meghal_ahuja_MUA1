@@ -4,64 +4,64 @@
       "label": "About",
       "href": "index.html",
       "in_header": true,
-      "in_quick": false,
-      "order": 1
+      "in_quick": true,
+      "order": 0
     },
     {
       "label": "Services",
       "href": "services.html",
       "in_header": true,
       "in_quick": true,
-      "order": 2
+      "order": 1
     },
     {
       "label": "Gallery",
       "href": "gallery.html",
       "in_header": true,
       "in_quick": true,
-      "order": 3
+      "order": 2
     },
     {
       "label": "Student Work",
       "href": "student-work.html",
       "in_header": true,
       "in_quick": true,
-      "order": 4
+      "order": 3
     },
     {
       "label": "Tutorials",
       "href": "tutorials.html",
       "in_header": true,
       "in_quick": true,
-      "order": 5
+      "order": 4
     },
     {
       "label": "Products",
       "href": "products.html",
       "in_header": true,
       "in_quick": true,
-      "order": 6
+      "order": 5
     },
     {
       "label": "Client Love",
       "href": "client-love.html",
       "in_header": true,
       "in_quick": true,
-      "order": 7
+      "order": 6
     },
     {
       "label": "FAQ",
       "href": "faq.html",
       "in_header": true,
       "in_quick": true,
-      "order": 8
+      "order": 7
     },
     {
       "label": "Book",
       "href": "contact.html",
       "in_header": true,
       "in_quick": true,
-      "order": 9
+      "order": 8
     }
   ]
 }
